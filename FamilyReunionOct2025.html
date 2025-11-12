@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Reunion Photo Albums</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #0078d7, #00a6ff);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    thead {
+      background-color: #0078d7;
+      color: white;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tbody tr:hover {
+      background-color: #e8f4ff;
+    }
+    a.album-link {
+      color: #0078d7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a.album-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead {
+        display: none;
+      }
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fff;
+      }
+      td {
+        padding: 10px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #0078d7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Reunion 2025 – Photo Albums</h1>
+    <p>Những khoảnh khắc được ghi lại trong thời gian ở cùng nhau tại Hoa Kỳ</p>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Album Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Oct 8-9, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị em và các cháu mấy tấm hình chụp hôm qua và hôm nay tại Los Angeles</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/C7WwteroGC7HBZs89" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 15, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị và các em hình ảnh chị Chấn, Cường Hiền và Hải Hoàn tham quan thành phố San Francisco hôm nay</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/TrgFFNUy4pXUJUrj7" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 15, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị và các em hình ảnh chị Chấn, Cường Hiền và Hải Hoàn tham quan hôm nay: đại học Stanford, hãng Google, khu chợ Việt Nam tại San Jose, khu bến cảng San Francisco. Trên đường đi gặp khá nhiều xe Waymo taxi không người lái chở khách.</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/a5qkVVjT2qZDKyHF8" target="_blank">View Album</a></td>
+        </tr>
+		<!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Oct 19, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị và các em hình ảnh gặp mặt gia đình thật đông vui hôm nay tại nhà Hoàn Hải:</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/pLYCNjgLatb27ieKA" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 20, 2025</td>
+          <td data-label="Description">Thăm Bác Trị gái tại bệnh viện Fountain Valley</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/GAFwLnYtHyhHxLxQA" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 20, 2025</td>
+          <td data-label="Description">Thăm Bác Trụ, chị Hồng</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/gQhtyG5NFd4iwJMV7" target="_blank">View Album</a></td>
+        </tr>
+		<!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Oct 22, 2025</td>
+          <td data-label="Description">Thăm thành phố Las Vegas</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/SMjZy2YSaBuTTouV8" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 23, 2025</td>
+          <td data-label="Description">Thăm Red Rock Canyon, cách Las Vegas khoảng 20 miles (32 km) về phía tây</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/rwCTn3iaBLMWk1J66" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 27, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị, các em và các cháu mấy tấm hình chụp tại quán Lá Xanh tại Santa Anna, quận Cam với món bún riêu ốc nổi tiếng</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/sMTsfAEovNAkps4c9" target="_blank">View Album</a></td>
+        </tr>
+		 <!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Oct 27, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị, các em và các cháu mấy tấm hình chụp tại quán Hai Lúa, Garden Grove, quận Cam với các món hủ tíu nam vang, bún mắm, mì gõ Sài gòn </td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/AiCVkdn6Nd9f7wcu9" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 31, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị, các em và các cháu mấy tấm hình chụp tại khu chợ Việt Nam Eden tại Waschington DC và các buổi đoàn tụ gia đình thật vui và ấm cúng tại Manassas, nhà anh chị Trình Thủy & cháu Jonathan tronng hai ngày 29 và 30. Oct. 2025</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/i4nsRHVFQNUZkDak7" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Nov 3, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị, các em và các cháu mấy tấm hình chụp tại khu chợ Việt Nam Eden tại Waschington DC và các buổi đoàn tụ gia đình thật vui và ấm cúng tại Manassas, nhà anh chị Trình Thủy & cháu Jonathan trong 3 ngày ngày 29, 30.và 31. Oct. 2025 (Lan đến Manassas ngày 31. Oct)</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/i4nsRHVFQNUZkDak7" target="_blank">View Album</a></td>
+        </tr>
+		 <!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Nov 3, 2025</td>
+          <td data-label="Description">Và thêm 2 ngày 1 và 2.11.2025: Nhà Manassas, Phở 75, Eden Center, Vịt Bắc Kinh</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/LVPY1UvKLU7LTDbS8" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Nov 3, 2025</td>
+          <td data-label="Description">Xin gửi đến các anh chị, các em và các cháu mấy tấm hình chụp hôm nay tại Manassas: Lan ra phi trường về lại North Carolina & Đặc sản “trâu gác bếp” với nước chấm “chẩm chéo” vùng núi Tây Bắc Việt Nam của người Thái, Mông, Dao.</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/LdQEJyxMDNvf7h447" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Nov 4, 2025</td>
+          <td data-label="Description">Bàn thờ nhà ac Trình Thủy, Beefsteck</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/7k2mhXQp3c18vCNC7" target="_blank">View Album</a></td>
+        </tr>
+		 <!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Nov 5, 2025</td>
+          <td data-label="Description">Thăm cậu Trù, cậu mợ Rư, nghĩa trang họ Đặng tại Lancaster, Pensylvania:</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/u1bJ4ftnm83o8z1w6" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Nov 6, 2025</td>
+          <td data-label="Description">Eden Center tại Falls Church</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/LDPecXHn4cPYHgwd9" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Nov 8, 2025</td>
+          <td data-label="Description">Ngày tạm biệt Dương tại Manassa</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/51vgamU9a5iBCPNo7" target="_blank">View Album</a></td>
+        </tr>
+		 <!-- EXAMPLE ROWS – replace with your own -->
+        <tr>
+          <td data-label="Date">Nov 9, 2025</td>
+          <td data-label="Description">Hình chụp ngày 9. Nov. 2025 tại nhà cậu Trù và hai em Liêu-Minh</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/SishBC5uTNQBZcyR6" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Nov 11, 2025</td>
+          <td data-label="Description">Bữa cơm gia đình đầm ấm tại nhà Liêu-Minh</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/RZ5xxwrHuQzjvq6a8" target="_blank">View Album</a></td>
+        </tr>
+        <tr>
+          <td data-label="Date">Oct 29 - Nov 9, 2025</td>
+          <td data-label="Description">Buoi hop gia dinh o nha anh Trinh chi Thuy- Oct 2025.</td>
+          <td data-label="Album"><a class="album-link" href="https://photos.app.goo.gl/Rm2XC5Yx9pdUFSgq8" target="_blank">View Album</a></td>
+        </tr>
+        <!-- Add more rows here for all 20 albums -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
